@@ -1,0 +1,37 @@
+.card-img-top {
+    height: 16rem;
+    padding: 2px;
+}
+
+#introduction {
+    background-color: #5483b3;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+#introduction p {
+    font-size: x-large;
+    text-align: justify;
+    font-weight: bold;
+    color: #c1e8ff;
+}
+
+#location {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+
+.column__block {
+    background-color: #5483b3;
+    border-radius: 10px;
+    padding: 4px;
+    min-width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #c1e8ff;
+}
