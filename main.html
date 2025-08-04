@@ -23,8 +23,8 @@
         <nav>
             <ul id="menu">
                 <li><a href="programs.html">Программы</a></li>
-                <li><a href="">Новости</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
     </header>
@@ -92,15 +92,15 @@
                 <form id="send__form" method="post">
                     <div id="input__wrap">
                         <div id="personal__info">
-                            <input id="name" name="name" type="text" placeholder="Имя" autocomplete="off" required>
-                            <input id="email" name="email" type="email" placeholder="Email" autocomplete="off" required>
-                            <input id="phone" name="phone" type="tel" placeholder="Телефон" autocomplete="off" required>
+                            <input id="name" class="form-control" name="name" type="text" placeholder="Имя" autocomplete="off" required>
+                            <input id="email" class="form-control" name="email" type="email" placeholder="Email" autocomplete="off" required>
+                            <input id="phone" class="form-control" name="phone" type="tel" placeholder="Телефон" autocomplete="off" required>
                         </div>
                         <div id="personal__info">
-                            <textarea name="comment" placeholder="Ваш комментарий..." autocomplete="off" required></textarea>
+                            <textarea class="form-control" name="comment" placeholder="Ваш комментарий..." autocomplete="off" required></textarea>
                         </div>
                     </div>
-                    <input name="send" id="send__button" type="submit" value="Отправить">
+                    <input name="send" class="btn btn-primary" id="send__button" type="submit" value="Отправить">
                 </form>
             </section>
         </section>

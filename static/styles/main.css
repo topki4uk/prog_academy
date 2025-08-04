@@ -59,7 +59,8 @@
 
 #personal__info {
     display: flex;
-    gap: 5px;
+    justify-content: space-between;
+    gap: 10px;
     flex-direction: column;
 }
 
@@ -70,13 +71,15 @@
 
 textarea {
     min-width: 400px;
-    height: 100px;
+    height: 150px;
     border-radius: 10px;
 }
 
 #send__button {
     margin-top: 2%;
     width: 100%;
+    font-size: x-large;
+    font-weight: bold;
 }
 
 #scroller {
@@ -85,4 +88,11 @@ textarea {
     left: 92%;
     width: 64px;
     visibility: hidden;
+}
+
+#send__button:hover {
+    background: linear-gradient(to bottom right, darkgreen, lawngreen);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7),
+              inset 0 0 20px rgba(255, 255, 255, 0.7);
+    transition: all 0.4s ease-in-out;
 }
