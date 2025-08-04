@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: #021024 !important;
 }
@@ -5,6 +9,9 @@ body {
 header {
     margin: auto;
     display: flex;
+    position: sticky;
+    z-index: 10;
+    top: 5px;
     justify-content: space-between;
     align-items: center;
     max-width: 90%;
