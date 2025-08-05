@@ -1,3 +1,4 @@
+import os
 import json
 import smtplib
 from email.mime.text import MIMEText
@@ -5,15 +6,18 @@ from email.mime.text import MIMEText
 from flask import Flask
 from flask import request
 from flask import make_response
+from dotenv import load_dotenv
 
+
+load_dotenv()
+SECRET_KEY = os.getenv('SECRET_KEY')
+
+app = Flask(__name__)
 
 def send_message(sender, to, message):
     with smtplib.SMTP_SSL('smtp.mail.ru', 465) as server:
-        server.login(sender, '3fOB8j0tApfcgNTjDsa2')
+        server.login(sender, SECRET_KEY)
         server.sendmail(sender, to, message)
-
-
-app = Flask(__name__)
 
 @app.route('/send_mail', methods=['POST'])
 def send_mail():
