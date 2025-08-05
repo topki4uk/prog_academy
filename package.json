@@ -1,0 +1,12 @@
+{
+    "devDependencies": {
+        "@yandex/ymaps3-types": "^1.0.17179206",
+        "http-server": "14.1.1"
+    },
+    "scripts": {
+        "start": "npx http-server ."
+    },
+    "dependencies": {
+        "@yandex/ymaps3-default-ui-theme": "^0.0.19"
+    }
+}

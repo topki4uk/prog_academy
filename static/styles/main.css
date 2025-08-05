@@ -24,13 +24,20 @@
 
 }
 
+#map {
+    width: auto;
+    min-width: 45%;
+    background-color: #5483b3;
+    border-radius: 10px;
+    padding: 8px;
+}
+
 .column__block {
     background-color: #5483b3;
     border-radius: 10px;
     padding: 4px;
     min-width: 40%;
     max-width: 90%;
-    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
