@@ -25,7 +25,7 @@ document.getElementById("send__form").onsubmit = async function (e) {
 
     fetch(url, {
         method: 'POST',
-        signal: AbortSignal.timeout(5000),
+        signal: AbortSignal.timeout(10000),
         headers: {
                  "Content-Type": "application/json"
             },
@@ -36,7 +36,7 @@ document.getElementById("send__form").onsubmit = async function (e) {
             if (data['status_code'] == 200) {
                 buttonText.style.display = 'inline-block';
                 spinner.style.display = 'none';
-                buttonText.innerHTML = 'Отправлено';
+                buttonText.innerHTML = 'Отправлено!';
                 button.style.background = 'lawngreen';
             } else {
                 buttonText.style.display = 'inline-block';
