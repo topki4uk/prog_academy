@@ -11,3 +11,11 @@
 .card-img-top {
     padding: 2px;
 }
+
+.full-info {
+    display: none;
+}
+
+.modal-title {
+    color: #000;
+}

@@ -85,16 +85,17 @@ textarea {
 #send__button {
     margin-top: 2%;
     width: 100%;
+    
     font-size: x-large;
     font-weight: bold;
 }
 
-#scroller {
-    position: sticky;
-    bottom: 10%;
-    left: 92%;
-    width: 64px;
-    visibility: hidden;
+#send__button:enabled {
+    opacity: 1;
+}
+
+#send__button:disabled {
+    opacity: 0.5;
 }
 
 #send__button:hover {
@@ -102,4 +103,12 @@ textarea {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7),
               inset 0 0 20px rgba(255, 255, 255, 0.7);
     transition: all 0.4s ease-in-out;
+}
+
+#spinner {
+    display: none;
+}
+
+#button-text {
+    display: inline-block;
 }

@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/styles/base_style.css">
-    <link rel="stylesheet" href="../static/styles/programs.css">
+    <link rel="stylesheet" href="static/styles/base_style.css">
+    <link rel="stylesheet" href="static/styles/programs.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <title>Программы</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
         <a href="main.html">
             <div id="logo_block">
             <span id="academy_logo">
-                <img id="logo" src="../static/images/image.png" alt="">
+                <img id="logo" src="static/images/image.png" alt="">
             </span>
             <h1>Academy</h1>
         </div>
@@ -31,72 +32,138 @@
             <h1>Мы предоставляем следующие программы</h1>
             <section id="gallery">
                 <div class="card">
-                    <img src="../static/images/fullstack.png" alt="" class="card-img-top">
+                    <img src="static/images/fullstack.png" alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Fullstack-разработка на JavaScript</h5>
                         <ul>
                             <li class="card-text">Изучение фронтенда (HTML/CSS, React) и бэкенда (Node.js, Express, базы данных).</li>
                             <li class="card-text">Длительность: 6–12 месяцев.</li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Узнать больше...</a>
+                        <div class="full-info" id="fullstack-dev">
+                            <h5>Общие сведения</h5>
+                            <ul>
+                                <li class="card-text">Изучение фронтенда (HTML/CSS, React) и бэкенда (Node.js, Express, базы данных).</li>
+                                <li class="card-text">Длительность: 6–12 месяцев.</li>
+                            </ul>
+                            <br>
+                            <h5>Необходимые навыки</h5>
+                            <ul>
+                                <li class="card-text">Базовые владения HTML/CSS, JS и PostgreSQL</li>
+                                <li class="card-text">Понимание принципов ООП, Rest API и реляционной алгебры</li>
+                            </ul>
+                            <br>
+                            <h5>Цена</h5>
+                            <h6>70.000 ₽</h6>
+                        </div>
+                        <button type="button" class="btn btn-primary" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#exampleModal" 
+                        course-title="Fullstack-разработка на JavaScript"
+                        block-info-id="fullstack-dev">Узнать больше...</button>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../static/images/data_science.png" alt="" class="card-img-top">
+                    <img src="static/images/data_science.png" alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Python для Data Science и веб-разработки</h5>
                         <ul>
                             <li class="card-text">Основы Python, Django/Flask, анализ данных (Pandas, NumPy), машинное обучение.</li>
                             <li class="card-text">Длительность: 4–9 месяцев.</li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Узнать больше...</a>
+                        <div class="full-info" id="data-science">
+                            <h4>Укажите информацию о курсе...</h4>
+                        </div>
+                        <button type="button" class="btn btn-primary" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#exampleModal" 
+                        course-title="Python для Data Science и веб-разработки"
+                        block-info-id="data-science">Узнать больше...</button>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../static/images/hacking.png" alt="" class="card-img-top">
+                    <img src="static/images/hacking.png" alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Основы кибербезопасности и Ethical Hacking</h5>
                         <ul>
                             <li class="card-text">Пентестинг, защита сетей, работа с Kali Linux, Burp Suite.</li>
                             <li class="card-text">Длительность: 3–6 месяцев.</li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Узнать больше...</a>
+                        <div class="full-info" id="hacking">
+                            <h4>Укажите информацию о курсе...</h4>
+                        </div>
+                        <button type="button" class="btn btn-primary" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#exampleModal" 
+                        course-title="Основы кибербезопасности и Ethical Hacking"
+                        block-info-id="hacking">Узнать больше...</button>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../static/images/aws.png" alt="" class="card-img-top">
+                    <img src="static/images/aws.png" alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Администрирование Linux и облачных сервисов (AWS, Azure)</h5>
                         <ul>
                             <li class="card-text">Настройка серверов, DevOps-инструменты (Docker, Kubernetes), облачные технологии.</li>
                             <li class="card-text">Длительность: 5–8 месяцев.</li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Узнать больше...</a>
+                        <div class="full-info" id="aws">
+                            <h4>Укажите информацию о курсе...</h4>
+                        </div>
+                        <button type="button" class="btn btn-primary" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#exampleModal" 
+                        course-title="Администрирование Linux и облачных сервисов (AWS, Azure)"
+                        block-info-id="aws">Узнать больше...</button>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../static/images/big_data.png" alt="" class="card-img-top">
+                    <img src="static/images/big_data.png" alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Big Data и обработка данных (SQL, Hadoop, Spark)</h5>
                         <ul>
                             <li class="card-text">Работа с большими данными, ETL-процессы, облачные хранилища.</li>
                             <li class="card-text">Длительность: 6–9 месяцев.</li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Узнать больше...</a>
+                        <div class="full-info" id="big_data">
+                            <h4>Укажите информацию о курсе...</h4>
+                        </div>
+                        <button type="button" class="btn btn-primary" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#exampleModal" 
+                        course-title="Big Data и обработка данных (SQL, Hadoop, Spark)"
+                        block-info-id="big_data">Узнать больше...</button>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../static/images/buisness.png" alt="" class="card-img-top">
+                    <img src="static/images/buisness.png" alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Бизнес-аналитика и визуализация данных (Power BI, Tableau)</h5>
                         <ul>
                             <li class="card-text">Анализ данных, дашборды, основы статистики.</li>
                             <li class="card-text">Длительность: 3–5 месяцев.</li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Узнать больше...</a>
+                        <div class="full-info" id="buisness">
+                            <h4>Укажите информацию о курсе...</h4>
+                        </div>
+                        <button type="button" class="btn btn-primary" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#exampleModal" 
+                        course-title="Бизнес-аналитика и визуализация данных (Power BI, Tableau)"
+                        block-info-id="buisness">Узнать больше...</button>
                     </div>
                 </div>
             </section>
+            <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-4" id="exampleModalLabel">New message</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body"></div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -121,9 +188,17 @@
         </div>
         <div id="useful__links">
             <h4>Полезные ссылки</h4>
-            <a href="../static/pdf/some_useful_info.pdf" target="_blank">Политика компании</a>
+            <a href="static/pdf/some_useful_info.pdf" target="_blank">Политика компании</a>
             <a href="" target="_blank">Согласие на обработку персональных данных</a>
         </div>
     </footer>
+    <div id="scroller">
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+            </svg></a>
+    </div>
+    <script src="static/scripts/scroller.js"></script>
+    <script src="static/scripts/programms.js"></script>
 </body>
 </html>

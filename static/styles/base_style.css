@@ -107,6 +107,14 @@ footer div {
     flex-direction: column;
 }
 
+#scroller {
+    position: sticky;
+    bottom: 10%;
+    left: 92%;
+    width: 64px;
+    visibility: hidden;
+}
+
 #media__links {
     display: flex;
     flex-direction: row;

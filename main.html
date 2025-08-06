@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../static/images/image.png" type="image/x-icon">
-    <link rel="stylesheet" href="../static/styles/base_style.css">
-    <link rel="stylesheet" href="../static/styles/main.css">
+    <link rel="shortcut icon" href="static/images/image.png" type="image/x-icon">
+    <link rel="stylesheet" href="static/styles/base_style.css">
+    <link rel="stylesheet" href="static/styles/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <title>Academy</title>
 </head>
@@ -15,7 +15,7 @@
         <a href="main.html">
             <div id="logo_block">
             <span id="academy_logo">
-                <img id="logo" src="../static/images/image.png" alt="">
+                <img id="logo" src="static/images/image.png" alt="">
             </span>
             <h1>Academy</h1>
         </div>
@@ -33,27 +33,24 @@
             <h1>Кто мы такие?</h1>
             <section id="gallery">
                 <div class="card">
-                    <img src="../static/images/some_guy.png" alt="" class="card-img-top">
+                    <img src="static/images/some_guy.png" alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Какой-то важный чувак</h5>
                         <p class="card-text">Это самый важный чувак.</p>
-                        <a href="#" class="btn btn-primary">Узнать больше...</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../static/images/another_guy.png" alt="" class="card-img-top">
+                    <img src="static/images/another_guy.png" alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Другой важный чувак</h5>
                         <p class="card-text">Тоже какой-то важный чувак.</p>
-                        <a href="#" class="btn btn-primary">Узнать больше...</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../static/images/some_girl.png" alt="" class="card-img-top">
+                    <img src="static/images/some_girl.png" alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Какая-то девушка</h5>
                         <p class="card-text">Важная девушка.</p>
-                        <a href="#" class="btn btn-primary">Узнать больше...</a>
                     </div>
                 </div>
             </section>
@@ -90,7 +87,7 @@
         <section class="main__block">
             <h1>Остались вопросы?</h1>
             <section id="questions">
-                <form id="send__form" method="post">
+                <form id="send__form">
                     <div id="input__wrap">
                         <div id="personal__info">
                             <input id="name" class="form-control" name="name" type="text" placeholder="Имя" autocomplete="off" required>
@@ -101,7 +98,11 @@
                             <textarea class="form-control" name="comment" placeholder="Ваш комментарий..." autocomplete="off" required></textarea>
                         </div>
                     </div>
-                    <input name="send" class="btn btn-primary" id="send__button" type="submit" value="Отправить">
+                    <button class="btn btn-primary" id="send__button" name="send" type="submit" disabled>
+                        <span id="button-text" role="status">Отправить</span>
+                        <span id="spinner" class="spinner-border"></span>
+                    </button>
+                    
                 </form>
             </section>
         </section>
@@ -128,7 +129,7 @@
         </div>
         <div id="useful__links">
             <h4>Полезные ссылки</h4>
-            <a href="../static/pdf/some_useful_info.pdf" target="_blank">Политика компании</a>
+            <a href="static/pdf/some_useful_info.pdf" target="_blank">Политика компании</a>
             <a href="" target="_blank">Согласие на обработку персональных данных</a>
         </div>
     </footer>
@@ -139,7 +140,7 @@
                 <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
             </svg></a>
     </div>
-    <script src="../static/scripts/scroller.js"></script>
-    <script src="../static/scripts/send_question.js"></script>
+    <script src="static/scripts/scroller.js"></script>
+    <script src="static/scripts/question_form.js"></script>
 </body>
 </html>
