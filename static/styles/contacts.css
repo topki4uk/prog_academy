@@ -14,14 +14,22 @@
     color: #c1e8ff;
 }
 
-#map {
-    display: flex;
-    justify-content: center;
+#big-map {
+    display: block;
     background-color: #5483b3;
-    width: 95%;
+    width: 100%;
     margin: auto;
     padding: 8px;
     border-radius: 10px;
+}
+
+#small-map {
+    display: none;
+    width: auto;
+    min-width: 45%;
+    background-color: #5483b3;
+    border-radius: 10px;
+    padding: 4px;
 }
 
 #address {
@@ -35,7 +43,7 @@
     border-radius: 10px;
     padding: 4px;
     min-width: 50%;
-    max-width: 70%;
+    max-width: 75%;
     width: auto;
     display: flex;
     margin: auto;
@@ -43,4 +51,26 @@
     justify-content: center;
     flex-direction: column;
     color: #c1e8ff;
+}
+
+@media (max-width: 768px) {
+    .column__block {
+        min-width: 90%;
+    }
+
+    .column__block h2 {
+        font-size: medium;
+    }
+
+    .column__block h4 {
+        font-size: medium;
+    }
+
+    #small-map {
+        display: block;
+    }
+
+    #big-map {
+        display: none;
+    }
 }

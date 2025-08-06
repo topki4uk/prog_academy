@@ -42,7 +42,7 @@ header a {
 }
 
 nav {
-    margin-right: 8%;
+    margin-right: 4%;
 }
 
 nav ul {
@@ -121,7 +121,57 @@ footer div {
     gap: 5px;
 }
 
+#media__links a {
+    text-decoration: none;
+    color: #c1e8ff;
+}
+
 #useful__links a {
     text-decoration: none;
     color: #c1e8ff;
+}
+
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        margin: auto;
+    }
+
+    #logo {
+        width: 50px;
+    }
+
+    #logo_block h1 {
+        font-size: x-large;
+    }
+
+    #menu {
+        font-size: medium;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .main__block {
+        margin-top: 5%;
+    }
+
+    .main__block h1 {
+        font-size: large;
+    }
+
+    footer {
+        gap: 20px;
+        font-size: small;
+    }
+
+    #scroller {
+        left: 80%;
+        bottom: 5%;
+    }
 }

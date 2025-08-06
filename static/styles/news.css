@@ -24,3 +24,27 @@
     border-radius: 10px;
     width: 60%;
 }
+
+@media (max-width: 768px) {
+    .main__block h2 {
+        font-size: large;
+    }
+
+    .info__block {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .image__block img {
+        width: 20rem;
+    }
+
+    .text__block {
+        width: 95%;
+        font-size: medium;
+    }
+
+    .text__block h4 {
+        font-size: large;
+    }
+}
