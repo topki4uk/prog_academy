@@ -1,5 +1,7 @@
+@import url('settings.css');
+
 .main__block h2 {
-    color: #c1e8ff;
+    color: var(--text-color);
     padding: 8px;
 }
 
@@ -16,8 +18,8 @@
 }
 
 .text__block {
-    background-color: #5483b3;
-    color: #c1e8ff;
+    background-color: var(--text-block-color);
+    color: var(--text-color);
     font-size: large;
     text-align: justify;
     padding: 6px;

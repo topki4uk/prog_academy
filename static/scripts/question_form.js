@@ -7,7 +7,7 @@ document.getElementById("send__form").onsubmit = async function (e) {
 
     buttonText.style.display = 'none';
     spinner.style.display = 'inline-block';
-    button.style.background = 'linear-gradient(to bottom right, darkgreen, lawngreen)';
+    button.style.background = 'var(--button-gradient)';
 
     let form = document.getElementById("send__form");    
     let formData = {};
@@ -37,19 +37,19 @@ document.getElementById("send__form").onsubmit = async function (e) {
                 buttonText.style.display = 'inline-block';
                 spinner.style.display = 'none';
                 buttonText.innerHTML = 'Отправлено!';
-                button.style.background = 'lawngreen';
+                button.style.background = 'var(--button-positive-color)';
             } else {
                 buttonText.style.display = 'inline-block';
                 spinner.style.display = 'none';
                 buttonText.innerHTML = 'Что-то пошло не так :(';
-                button.style.background = 'firebrick';
+                button.style.background = 'var(--button-negative-color)';
             }
         })
             .catch(() => {
                 buttonText.style.display = 'inline-block';
                 spinner.style.display = 'none';
                 buttonText.innerHTML = 'Что-то пошло не так :(';
-                button.style.background = 'firebrick';
+                button.style.background = 'var(--button-negative-color)';
             })
 };
 

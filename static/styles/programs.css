@@ -1,3 +1,5 @@
+@import url('settings.css');
+
 .card {
     width: 30rem;
 }
@@ -12,10 +14,26 @@
     padding: 2px;
 }
 
+.btn-primary {
+    background-color: var(--button-color) !important;
+    border-color: var(--button-color) !important;
+}
+
+.btn-primary:hover {
+    transform: scale(1.03);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.7);
+    transition: all 0.4s ease-in-out;
+}
+
 .full-info {
     display: none;
 }
 
 .modal-title {
-    color: #000;
+    color:  var(--text-color);
+}
+
+.modal-content {
+    background-color: var(--body-block-color) !important;
+    color: var(--text-color) !important;
 }

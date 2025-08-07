@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
+
+:root {
+    --body-color: #daded8;
+    --body-block-color: #768064;
+    --text-block-color: #959581;
+    --text-color: #daded8;
+
+    --button-color: #576645;
+    --button-gradient: linear-gradient(to bottom right, #576645, forestgreen);
+    --button-positive-color: forestgreen;
+    --button-negative-color: firebrick;
+
+    --text-font: 'Unbounded';
+}
+
+@font-face {
+    font-family: 'Zekton';
+    src: url('../fonts/zekton_rg.ttf');
+}
+
+@font-face {
+    font-family: 'Terminalia';
+    src: url('../fonts/Terminalia-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Line';
+    src: url('../fonts/AC\ Line.otf');
+}

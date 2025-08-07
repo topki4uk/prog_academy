@@ -1,9 +1,12 @@
+@import url('settings.css');
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-    background-color: #021024 !important;
+    background-color: var(--body-color) !important;
+    font-family: var(--text-font) !important;
 }
 
 header {
@@ -17,7 +20,7 @@ header {
     max-width: 90%;
     padding: 8px;
     border-radius: 10px;
-    background-color: #052659;
+    background-color: var(--body-block-color);
 }
 
 header a {
@@ -32,7 +35,7 @@ header a {
 }
 
 #logo_block h1 {
-    color: #c1e8ff;
+    color: var(--text-color);
 }
 
 #logo {
@@ -49,6 +52,43 @@ nav ul {
     margin: 0;
 }
 
+.card {
+     background-color: var(--text-block-color) !important;
+     color: var(--text-color) !important;
+}
+
+.card-img-top {
+    height: 18rem;
+    padding: 2px;
+}
+
+#logo_block:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
+
+#menu li:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-link::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background-color: var(--text-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.menu-link:hover::before {
+    transform: scaleX(1);
+}
+
 #menu {
     display: flex;
     gap: 50px;
@@ -59,7 +99,7 @@ nav ul {
 
 #menu a {
     text-decoration: none;
-    color: #c1e8ff;
+    color: var(--text-color);
 }
 
 main {
@@ -68,7 +108,7 @@ main {
 }
 
 .main__block {
-    background-color: #052659;
+    background-color: var(--body-block-color);
     padding: 12px;
     margin-top: 2%;
     border-radius: 10px;
@@ -76,7 +116,7 @@ main {
 
 main h1 {
     padding: 4px;
-    color: #c1e8ff;
+    color: var(--text-color);
 }
 
 #gallery {
@@ -96,11 +136,11 @@ footer {
     max-width: 90%;
     padding: 8px;
     border-radius: 10px;
-    background-color: #052659;
+    background-color: var(--body-block-color);
 }
 
 footer div {
-    color: #c1e8ff;
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,6 +155,10 @@ footer div {
     visibility: hidden;
 }
 
+#scroller a {
+    color: var(--button-color);
+}
+
 #media__links {
     display: flex;
     flex-direction: row;
@@ -123,12 +167,16 @@ footer div {
 
 #media__links a {
     text-decoration: none;
-    color: #c1e8ff;
+    color: var(--text-color);
+}
+
+#useful__links a:hover {
+    text-decoration: underline;
 }
 
 #useful__links a {
     text-decoration: none;
-    color: #c1e8ff;
+    color: var(--text-color);
 }
 
 @media (max-width: 768px) {
@@ -139,6 +187,11 @@ footer div {
 
     nav {
         margin: auto;
+        margin-top: 2%;
+    }
+
+    .card-img-top {
+        height: 100%;
     }
 
     #logo {
@@ -147,6 +200,7 @@ footer div {
 
     #logo_block h1 {
         font-size: x-large;
+        margin: 0;
     }
 
     #menu {

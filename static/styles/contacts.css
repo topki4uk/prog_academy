@@ -1,3 +1,5 @@
+@import url('settings.css');
+
 .card-img-top {
     max-height: 18rem;
     padding: 2px;
@@ -11,12 +13,12 @@
 }
 
 .main__block {
-    color: #c1e8ff;
+    color: var(--text-color);
 }
 
 #big-map {
     display: block;
-    background-color: #5483b3;
+    background-color: var(--text-block-color);
     width: 100%;
     margin: auto;
     padding: 8px;
@@ -27,7 +29,7 @@
     display: none;
     width: auto;
     min-width: 45%;
-    background-color: #5483b3;
+    background-color: var(--text-block-color);
     border-radius: 10px;
     padding: 4px;
 }
@@ -39,7 +41,7 @@
 }
 
 .column__block {
-    background-color: #5483b3;
+    background-color: var(--text-block-color);
     border-radius: 10px;
     padding: 4px;
     min-width: 50%;
@@ -50,7 +52,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: #c1e8ff;
+    color: var(--text-color);
 }
 
 @media (max-width: 768px) {
