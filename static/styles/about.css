@@ -1,0 +1,79 @@
+@import url('settings.css');
+
+#introduction {
+    background-color: var(--text-block-color);
+    border-radius: 10px;
+    padding: 4px;
+}
+
+#introduction p {
+    font-size: x-large;
+    text-align: justify;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+#location {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+
+#big-map {
+    display: block;
+    width: auto;
+    min-width: 45%;
+    background-color: var(--text-block-color);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+#small-map {
+    display: none;
+    width: auto;
+    min-width: 45%;
+    background-color: var(--text-block-color);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.column__block {
+    background-color: var(--text-block-color);
+    border-radius: 10px;
+    padding: 4px;
+    min-width: 40%;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    #introduction p {
+        font-size: medium;
+    }
+
+    #small-map {
+        display: block;
+    }
+
+    #big-map {
+        display: none;
+    }
+
+    #introduction h1 {
+        font-size: medium;
+    }
+
+    .column__block {
+        min-width: 100%;
+    }
+
+    .column__block h4 {
+        font-size: medium;
+    }
+}

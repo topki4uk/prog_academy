@@ -5,6 +5,14 @@
     padding: 8px;
 }
 
+#welcome-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text-color);
+}
+
 .info__block {
     display: flex;
     justify-content: center;

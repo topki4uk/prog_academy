@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="static/images/image.png" type="image/x-icon">
     <link rel="stylesheet" href="static/styles/base_style.css">
-    <link rel="stylesheet" href="static/styles/main.css">
+    <link rel="stylesheet" href="static/styles/about.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <title>Academy</title>
+    <title>О нас</title>
 </head>
 <body>
     <header>
@@ -21,7 +21,6 @@
         </a>
         <nav>
             <ul id="menu">
-                <li><a class="menu-link" href="about.html">О нас</a></li>
                 <li><a class="menu-link" href="programs.html">Программы</a></li>
                 <li><a class="menu-link" href="news.html">Новости</a></li>
                 <li><a class="menu-link" href="contacts.html">Контакты</a></li>
@@ -30,43 +29,63 @@
     </header>
     <main>
         <section class="main__block">
-            <h1>Что такое Academy?</h1>
-            <section id="academy-info">
-                <img id="big-logo" src="static/images/image.png" alt="">
-                <div id="text-info">
-                    <h3>🚀Academy - лучшее профессиональное IT образование!</h3>
-                    <br>
-                    <p>Ваш старт в IT начинается здесь! Привет! Мы — <b>Academy</b>, и мы не просто обучаем IT-специалистов — мы создаём будущих лидеров цифровой эпохи. Почему сотни студентов выбирают нас? Вот лишь несколько причин:</p>
-                    <br>
-                    <p>✅<b>Преподаватели-практики</b> — наши менторы не теоретики, а senior-разработчики, DevOps-инженеры, аналитики данных и специалисты по кибербезопасности из топовых компаний. Они знают, какие навыки нужны прямо сейчас, и учат только актуальным технологиям.</p>
-                    <p>✅<b>Реальные проекты вместо сухой теории</b> — никаких скучных лекций! Вы сразу погружаетесь в работу: пишете код, тестируете, деплоите и даже участвуете в коммерческих проектах. К выпуску у вас будет не просто сертификат, а полноценное портфолио.</p>
-                    <p>✅<b>Гарантированное трудоустройство</b> — мы не бросаем вас после курсов. Наши партнёры — ведущие IT-компании, и мы помогаем с стажировкой и трудоустройством.</p>
-                    <p>✅<b>Гибкий формат обучения</b> — онлайн или оффлайн, индивидуально или в группе. Учитесь так, как вам удобно: записи занятий, домашние задания с проверкой и пожизненный доступ к материалам.</p>
-                    <br>
-                    <p>Хотите войти в IT с сильной подготовкой? Записывайтесь на бесплатную консультацию — покажем, как стартовать в профессии уже через несколько месяцев!</p>
+            <h1>Кто мы такие?</h1>
+            <section id="gallery">
+                <div class="card">
+                    <img src="static/images/some_guy.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Иванов Иван</h5>
+                        <p class="card-text">CEO организации Academy</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="static/images/another_guy.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Сергеев Сергей</h5>
+                        <p class="card-text">Менеджер продаж</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="static/images/some_girl.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Маринова Мария</h5>
+                        <p class="card-text">Бухгалтер</p>
+                    </div>
                 </div>
             </section>
         </section>
+
+        
+        <section class="main__block" id="goals">
+            <h1>Какие наши цели?</h1>
+            <section id="introduction">
+                <p>Цель нашей образовательной организации заключается в обеспечении качественного и доступного образования, направленного на всестороннее развитие личности, формирование профессиональных компетенций и подготовку обучающихся к успешной интеграции в современное общество. </p>
+            </section>
+        </section>
+
         <section class="main__block">
-            <h1>Остались вопросы?</h1>
-            <section id="questions">
-                <form id="send__form">
-                    <div id="input__wrap">
-                        <div class="personal__info">
-                            <input id="name" class="form-control" name="name" type="text" placeholder="Имя" autocomplete="off" required>
-                            <input id="email" class="form-control" name="email" type="email" placeholder="Email" autocomplete="off" required>
-                            <input id="phone" class="form-control" name="phone" type="tel" placeholder="Телефон" autocomplete="off" required>
-                        </div>
-                        <div class="personal__info">
-                            <textarea class="form-control" name="comment" placeholder="Ваш комментарий..." autocomplete="off" required></textarea>
-                        </div>
+            <h1>Как до нас добраться?</h1>
+            <section id="location">
+                <div class="column__block">
+                    <h2>Наш адрес</h2>
+                    <h4>Раменский бульвар, 1с1, Москва</h4>
+                    <br>
+                    <h2>Место занятий</h2>
+                    <h4>Этаж 2, Кабинет 212</h4>
+                    <br>
+                    <h2>Телефон заведующего</h2>
+                    <h4>8 (495) 123-456-789</h4>
+                </div>
+                <div id="big-map">
+                    <div id="column__block">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A08551f705214d257bede0e22c4d23f63ab35c83c49f12644b44ae956d59b837c&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
-                    <button class="btn btn-primary" id="send__button" name="send" type="submit" disabled>
-                        <span id="button-text" role="status">Отправить</span>
-                        <span id="spinner" class="spinner-border"></span>
-                    </button>
-                    
-                </form>
+                </div>
+                <div id="small-map">
+                    <div id="column__block">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A08551f705214d257bede0e22c4d23f63ab35c83c49f12644b44ae956d59b837c&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
             </section>
         </section>
     </main>
@@ -103,6 +122,6 @@
                 <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
             </svg></a>
     </div>
-    <script src="static/scripts/question_form.js"></script>
+    <script src="static/scripts/scroller.js"></script>
 </body>
 </html>

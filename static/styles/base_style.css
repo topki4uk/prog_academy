@@ -6,7 +6,7 @@ html {
 
 body {
     background-color: var(--body-color) !important;
-    font-family: var(--text-font) !important;
+    /* font-family: var(--text-font) !important; */
 }
 
 header {
@@ -182,11 +182,13 @@ footer div {
 @media (max-width: 768px) {
     header {
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
     }
 
     nav {
         margin: auto;
+        min-width: 80%;
         margin-top: 2%;
     }
 
@@ -208,8 +210,17 @@ footer div {
         padding: 0;
         display: flex;
         justify-content: center;
-        gap: 30px;
+        gap: 15px;
     }
+
+    #menu li {
+        white-space: nowrap;
+    }
+
+    /* .menu-link::before {
+        top: 100%;
+        left: 0;
+    } */
 
     .main__block {
         margin-top: 5%;
