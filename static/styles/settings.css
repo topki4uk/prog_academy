@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
 
 :root {
-    --body-color: #daded8;
-    --body-block-color: #768064;
-    --text-block-color: #959581;
-    --text-color: #daded8;
+    --body-color: #021024;
+    --body-block-color: #052659;
+    --text-block-color: #5483b3;
+    --text-color: #c1e8ff;
 
-    --button-color: #576645;
-    --button-gradient: linear-gradient(to bottom right, #576645, forestgreen);
+    --button-color: #052659;
+    --button-gradient: linear-gradient(to bottom right, seagreen, forestgreen);
     --button-positive-color: forestgreen;
     --button-negative-color: firebrick;
 
