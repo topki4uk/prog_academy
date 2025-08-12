@@ -11,6 +11,12 @@
     <title>Программы</title>
 </head>
 <body>
+    <div id="scroller">
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+            </svg></a>
+    </div>
     <header>
         <a href="index.html">
             <div id="logo_block">
@@ -23,6 +29,7 @@
         <nav>
             <ul id="menu">
                 <li><a class="menu-link" href="about.html">О нас</a></li>
+                <li><a class="menu-link" href="programs.html">Программы</a></li>
                 <li><a class="menu-link" href="news.html">Новости</a></li>
                 <li><a class="menu-link" href="contacts.html">Контакты</a></li>
             </ul>
@@ -30,10 +37,15 @@
     </header>
     <main>
         <section class="main__block">
-            <h1>Мы предоставляем следующие программы</h1>
+            <h1>Портфель программ</h1>
             <section id="gallery">
                 <div class="card">
-                    <img src="static/images/fullstack.png" alt="" class="card-img-top">
+                    <img src="static/images/fullstack.png" alt="" 
+                    class="card-img-top"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#exampleModal" 
+                    course-title="Fullstack-разработка на JavaScript"
+                    block-info-id="fullstack-dev">
                     <div class="card-body">
                         <h5 class="card-title">Fullstack-разработка на JavaScript</h5>
                         <ul>
@@ -64,7 +76,12 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="static/images/data_science.png" alt="" class="card-img-top">
+                    <img src="static/images/data_science.png" alt="" 
+                    class="card-img-top"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#exampleModal" 
+                    course-title="Python для Data Science и веб-разработки"
+                    block-info-id="data-science">
                     <div class="card-body">
                         <h5 class="card-title">Python для Data Science и веб-разработки</h5>
                         <ul>
@@ -100,7 +117,12 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="static/images/aws.png" alt="" class="card-img-top">
+                    <img src="static/images/aws.png" alt="" 
+                    class="card-img-top"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#exampleModal" 
+                    course-title="Основы кибербезопасности и Ethical Hacking"
+                    block-info-id="hacking">
                     <div class="card-body">
                         <h5 class="card-title">Администрирование Linux и облачных сервисов (AWS, Azure)</h5>
                         <ul>
@@ -118,7 +140,12 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="static/images/big_data.png" alt="" class="card-img-top">
+                    <img src="static/images/big_data.png" alt="" 
+                    class="card-img-top"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#exampleModal" 
+                    course-title="Big Data и обработка данных (SQL, Hadoop, Spark)"
+                    block-info-id="big_data">
                     <div class="card-body">
                         <h5 class="card-title">Big Data и обработка данных (SQL, Hadoop, Spark)</h5>
                         <ul>
@@ -136,7 +163,12 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="static/images/buisness.png" alt="" class="card-img-top">
+                    <img src="static/images/buisness.png" alt="" 
+                    class="card-img-top"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#exampleModal" 
+                    course-title="Бизнес-аналитика и визуализация данных (Power BI, Tableau)"
+                    block-info-id="buisness">
                     <div class="card-body">
                         <h5 class="card-title">Бизнес-аналитика и визуализация данных (Power BI, Tableau)</h5>
                         <ul>
@@ -193,13 +225,6 @@
             <a href="" target="_blank">Согласие на обработку персональных данных</a>
         </div>
     </footer>
-    
-    <div id="scroller">
-        <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
-                <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
-            </svg></a>
-    </div>
     <script src="static/scripts/scroller.js"></script>
     <script src="static/scripts/programms.js"></script>
 </body>

@@ -10,8 +10,18 @@
     justify-content: space-between;
 }
 
+.main__block h1 {
+    display: flex;
+    justify-content: center;
+}
+
 .card-img-top {
     padding: 2px;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+    transition: transform 0.6s ease-in-out;
 }
 
 .btn-primary {
